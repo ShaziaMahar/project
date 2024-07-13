@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="test">
+    <h1>
+      LOGIN FROM
+    </h1>
+    <form onsubmit="login(event)">
+      <input type="text" placeholder="enter your email" id="login_email">
+      <input type="password" placeholder="enter your password" name=" " id="login_password" style="margin-top: 40px;">
+      <div class="keep">
+        <button style="width: 15px; height: 15px; margin-top: 30px;"></button>
+        <h3 style="margin-top: -15px; margin-left: 25px; color: white; font-size: 13px;">Remember me</h3>
+        <h3 style="text-align: center; color:whitesmoke; margin-left: 170px; font-size: 13px; margin-top: -25px;">forgot
+          password?</h3>
+      </div>
+      <button type="submit"
+        style="padding: 10px ; margin-top: 10px; margin-left: 10px; border-radius: 10px;  cursor: pointer;  width: 98%;">submit</button>
+      <button onclick="logout()"
+        style="padding: 10px ; margin-top: 10px; margin-left: 10px; border-radius: 10px;  cursor: pointer;  width: 98%;">logout</button>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js";></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js";></script>
+  <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyBmcEePI-kXi9SijFZOapshDidH5Y3uBh8",
+    authDomain: "pro-app-e8e8a.firebaseapp.com",
+    projectId: "pro-app-e8e8a",
+    storageBucket: "pro-app-e8e8a.appspot.com",
+    messagingSenderId: "606350488598",
+    appId: "1:606350488598:web:9d1307a726c42811c53137"
+  };
+  firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
+
+</html>
